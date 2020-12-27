@@ -1,5 +1,11 @@
-.grid {
-  &__slider {
+@import "../../Utils/variables";
+
+div.grid {
+  &__container {
+    background-color: $lightBlue;
+  }
+
+  &__item {
     margin: auto;
   }
 }

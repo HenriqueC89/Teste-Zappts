@@ -1,9 +1,7 @@
-$white: #fff;
-$lightBlue: #a9c5ba;
+@import "../../Utils/variables";
 
 .carousel {
   &__container {
-    background-color: $lightBlue;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -16,18 +14,58 @@ $lightBlue: #a9c5ba;
   flex-direction: column;
 
   &__image {
-    width: 70%;
+    width: 80%;
+  }
+
+  h3,
+  p {
+    color: $white;
+    margin-bottom: 0;
   }
 
   &__title {
-    color: $white;
-    margin-top: 2rem;
-    margin-bottom: 0;
+    margin-top: $m1;
+    font-size: $f2;
+    line-height: $lh2;
+    font-weight: $normal;
+
+    @include large-mobile {
+      font-size: $f3;
+      line-height: $lh3;
+    }
+    @include medium-mobile {
+      margin-top: $m2;
+      font-size: $f4;
+      line-height: $lh4;
+    }
+    @include small-mobile {
+      margin-top: $m3;
+      font-size: $f5;
+      line-height: $lh5;
+    }
   }
 
   &__text {
-    color: $white;
-    margin-top: 1.5rem;
-    margin-bottom: 0;
+    margin-top: $m2;
+    font-size: $f3;
+    line-height: $lh3;
+    font-weight: $normal;
+    text-align: center;
+    width: 80%;
+
+    @include large-mobile {
+      font-size: $f4;
+      line-height: $lh4;
+    }
+    @include medium-mobile {
+      margin-top: $m3;
+      font-size: $f5;
+      line-height: $lh5;
+    }
+    @include small-mobile {
+      margin-top: $m3;
+      font-size: $f6;
+      line-height: $lh6;
+    }
   }
 }

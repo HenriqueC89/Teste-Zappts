@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
-import image from "../../Assets/Data.png";
+import image from "../../Assets/Images/Data.png";
 import "./Slider.scss";
 
 const item_values = [
@@ -43,14 +43,14 @@ const Slider = () => (
     className="carousel__container"
     animation="slide"
     interval={5000}
-    autoPlay={false}
+    autoPlay={true}
     navButtonsAlwaysInvisible={true}
     indicatorProps={{
       style: {
         width: 16,
         height: 11,
         color: "rgb(255,255,255,0.5)",
-        marginTop: "1rem",
+        marginTop: 30,
       },
     }}
     activeIndicatorProps={{
@@ -60,15 +60,15 @@ const Slider = () => (
         borderRadius: 50,
         backgroundColor: "rgb(255,255,255)",
         color: "rgb(255,255,255)",
-        marginTop: "1rem",
+        marginTop: 30,
       },
     }}
     // indicatorProps={{ className: "inactive" }}
     // activeIndicatorProps={{ className: "active" }}
     // indicatorContainerProps={{ className: "carousel__indicator" }}
   >
-    {item_values.map((item) => (
-      <Item item={item} />
+    {item_values.map((item, idx) => (
+      <Item key={idx} item={item} />
     ))}
   </Carousel>
 );
