@@ -1,0 +1,33 @@
+$white: #fff;
+$lightBlue: #a9c5ba;
+
+.carousel {
+  &__container {
+    background-color: $lightBlue;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__image {
+    width: 70%;
+  }
+
+  &__title {
+    color: $white;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    color: $white;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+}
