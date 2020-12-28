@@ -15,18 +15,24 @@
     font-size: $f2;
     line-height: $lh2;
     font-weight: $normal;
-    margin-bottom: $m4;
+    margin-bottom: $m6;
+
+    @include large {
+      margin-bottom: $m4;
+    }
 
     @include large-mobile {
       margin-bottom: $m2;
       font-size: $f3;
       line-height: $lh3;
     }
+
     @include medium-mobile {
       margin-bottom: $m1;
       font-size: $f4;
       line-height: $lh4;
     }
+
     @include small-mobile {
       margin-bottom: $m1;
       font-size: $f5;
@@ -38,7 +44,6 @@
     display: inherit;
     flex-direction: inherit;
     width: 45%;
-    margin-top: $m4;
 
     @include small-mobile {
       width: 100%;
@@ -46,9 +51,7 @@
   }
 
   &__fields {
-    &--password {
-      margin-top: $m2;
-    }
+    margin-top: $m2;
 
     .label {
       font-size: $f6;
@@ -68,7 +71,8 @@
         border-bottom: 1px solid $gray;
       }
 
-      input {
+      &__text {
+        font-family: $muliFontFamily;
         color: $black;
         font-size: $f5;
         line-height: $lh5;

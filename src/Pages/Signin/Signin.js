@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Login from "../../Components/Login/Login";
 import Slider from "../../Components/Slider/Slider";
 import Grid from "@material-ui/core/Grid";
@@ -9,6 +9,7 @@ import "./Signin.scss";
 const Signin = () => {
   const theme = useTheme();
   const smallView = useMediaQuery(theme.breakpoints.up("sm"));
+  const [loginForm, setLoginForm] = useState(true);
 
   return (
     <Grid

@@ -4,16 +4,14 @@ import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Signin from "./Pages/Signin/Signin";
+import Signup from "./Pages/Signup/Signup";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
         <Route path="/" exact={true} component={Signin} />
-        {/* <Route path="/sobre" component={Sobre} />
-        <Route path="/livros" component={Livros} />
-        <Route path="/autores" component={Autores} />
-        <Route component={NotFound} /> */}
+        <Route path="/signup" component={Signup} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

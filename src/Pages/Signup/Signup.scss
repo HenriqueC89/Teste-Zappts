@@ -27,6 +27,7 @@ div.grid {
         top: 1%;
         right: 1%;
       }
+
       @include medium-mobile {
         font-size: $f2;
         line-height: $lh2;
