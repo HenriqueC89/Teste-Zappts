@@ -1,10 +1,15 @@
 @import "../../Utils/variables";
 
 .carousel {
+  &__section {
+    margin: auto;
+  }
+
   &__container {
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    place-content: center;
   }
 }
 
@@ -24,7 +29,7 @@
   }
 
   &__title {
-    margin-top: $m1;
+    margin-top: $m3;
     font-size: $f2;
     line-height: $lh2;
     font-weight: $normal;
@@ -39,7 +44,7 @@
       line-height: $lh4;
     }
     @include small-mobile {
-      margin-top: $m3;
+      margin-top: $m1;
       font-size: $f5;
       line-height: $lh5;
     }
@@ -58,12 +63,12 @@
       line-height: $lh4;
     }
     @include medium-mobile {
-      margin-top: $m3;
+      margin-top: $m1;
       font-size: $f5;
       line-height: $lh5;
     }
     @include small-mobile {
-      margin-top: $m3;
+      margin-top: $m1;
       font-size: $f6;
       line-height: $lh6;
     }

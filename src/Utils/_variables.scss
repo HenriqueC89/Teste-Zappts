@@ -11,9 +11,10 @@ $lightBlue: #a9c5ba;
 $gray: #707070;
 
 /* Margins */
-$m1: 30px;
+$m1: 10px;
 $m2: 20px;
-$m3: 10px;
+$m3: 30px;
+$m4: 40px;
 
 /* Font sizes */
 $f1: 35px;
@@ -37,9 +38,9 @@ $bold: 700;
 $heavy: 900;
 
 /* Viewports */
-$small: 480px;
-$medium: 768px;
-$large: 1024px;
+$small: 600px;
+$medium: 960px;
+$large: 1280px;
 
 /* Mixins */
 @mixin small-mobile {

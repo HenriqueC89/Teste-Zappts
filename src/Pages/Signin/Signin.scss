@@ -1,11 +1,32 @@
 @import "../../Utils/variables";
 
 div.grid {
-  &__container {
+  &__item {
+    margin: auto;
+  }
+
+  &__slider {
     background-color: $lightBlue;
   }
 
-  &__item {
-    margin: auto;
+  &__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .page__title {
+      display: inherit;
+      justify-content: flex-end;
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      font-size: $f1;
+      line-height: $lh1;
+      font-weight: $heavy;
+
+      @include small-mobile {
+        top: 105%;
+      }
+    }
   }
 }
