@@ -1,0 +1,39 @@
+@import "../../Utils/variables";
+
+div.grid {
+  &__item {
+  }
+
+  &__slider {
+    background-color: $lightBlue;
+  }
+
+  &__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .page__title {
+      display: inherit;
+      justify-content: flex-end;
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      font-size: $f1;
+      line-height: $lh1;
+      font-weight: $heavy;
+
+      @include large {
+        top: 1%;
+        right: 1%;
+      }
+      @include medium-mobile {
+        font-size: $f2;
+        line-height: $lh2;
+      }
+      @include small-mobile {
+        top: 105%;
+      }
+    }
+  }
+}

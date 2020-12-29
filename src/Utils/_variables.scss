@@ -1,0 +1,73 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+$muliFontFamily: "Muli";
+$latoFontFamily: "Lato";
+
+/* Colors */
+$white: #fff;
+$black: #000000;
+$lightBlue: #a9c5ba;
+$gray: #707070;
+
+/* Margins */
+$m1: 10px;
+$m2: 20px;
+$m3: 30px;
+$m4: 40px;
+$m5: 50px;
+$m6: 60px;
+
+/* Font sizes */
+$f1: 35px;
+$f2: 30px;
+$f3: 20px;
+$f4: 18px;
+$f5: 16px;
+$f6: 14px;
+
+/* Line heights*/
+$lh1: 48px;
+$lh2: 38px;
+$lh3: 25px;
+$lh4: 22px;
+$lh5: 20px;
+$lh6: 18px;
+
+/* Font weights */
+$normal: 400;
+$bold: 700;
+$heavy: 900;
+
+/* Viewports */
+$small: 600px;
+$medium: 960px;
+$large: 1280px;
+$extraLarge: 1600px;
+
+/* Mixins */
+@mixin small-mobile {
+  @media (max-width: $small) {
+    @content;
+  }
+}
+@mixin medium-mobile {
+  @media (min-width: $small) and (max-width: $medium) {
+    @content;
+  }
+}
+@mixin large-mobile {
+  @media (min-width: $medium) and (max-width: $large) {
+    @content;
+  }
+}
+@mixin large {
+  @media (min-width: $large) and (max-width: $extraLarge) {
+    @content;
+  }
+}
+@mixin extraLarge {
+  @media (min-width: $extraLarge) {
+    @content;
+  }
+}

@@ -1,0 +1,76 @@
+@import "../../Utils/variables";
+
+.carousel {
+  &__section {
+    margin: auto;
+  }
+
+  &__container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__image {
+    width: 80%;
+  }
+
+  h3,
+  p {
+    color: $white;
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin-top: $m3;
+    font-size: $f2;
+    line-height: $lh2;
+    font-weight: $normal;
+
+    @include large-mobile {
+      font-size: $f3;
+      line-height: $lh3;
+    }
+    @include medium-mobile {
+      margin-top: $m2;
+      font-size: $f4;
+      line-height: $lh4;
+    }
+    @include small-mobile {
+      margin-top: $m1;
+      font-size: $f5;
+      line-height: $lh5;
+    }
+  }
+
+  &__text {
+    margin-top: $m2;
+    font-size: $f3;
+    line-height: $lh3;
+    font-weight: $normal;
+    text-align: center;
+    width: 80%;
+
+    @include large-mobile {
+      font-size: $f4;
+      line-height: $lh4;
+    }
+    @include medium-mobile {
+      margin-top: $m1;
+      font-size: $f5;
+      line-height: $lh5;
+    }
+    @include small-mobile {
+      margin-top: $m1;
+      font-size: $f6;
+      line-height: $lh6;
+    }
+  }
+}

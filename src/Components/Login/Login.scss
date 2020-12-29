@@ -1,0 +1,166 @@
+@import "../../Utils/variables";
+
+.login {
+  &__section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+  }
+
+  &__title {
+    color: $gray;
+    font-size: $f2;
+    line-height: $lh2;
+    font-weight: $normal;
+    margin-bottom: $m6;
+
+    @include large {
+      margin-bottom: $m4;
+    }
+
+    @include large-mobile {
+      margin-bottom: $m2;
+      font-size: $f3;
+      line-height: $lh3;
+    }
+
+    @include medium-mobile {
+      margin-bottom: $m1;
+      font-size: $f4;
+      line-height: $lh4;
+    }
+
+    @include small-mobile {
+      margin-bottom: $m1;
+      font-size: $f5;
+      line-height: $lh5;
+    }
+  }
+
+  &__form {
+    display: inherit;
+    flex-direction: inherit;
+    width: 45%;
+
+    @include small-mobile {
+      width: 100%;
+    }
+  }
+
+  &__fields {
+    margin-top: $m2;
+
+    .label {
+      font-size: $f6;
+      line-height: $lh6;
+      font-family: $muliFontFamily;
+      color: $gray;
+    }
+
+    .input {
+      border-bottom: 1px solid $gray;
+
+      &:hover::before {
+        border-bottom: 1px solid $gray;
+      }
+
+      &::after {
+        border-bottom: 1px solid $gray;
+      }
+
+      &__text {
+        font-family: $muliFontFamily;
+        color: $black;
+        font-size: $f5;
+        line-height: $lh5;
+        margin: 0 $m2;
+      }
+    }
+  }
+
+  &__forgot-password {
+    align-self: flex-end;
+    margin-top: $m2;
+    color: $gray;
+    font-size: $f6;
+    line-height: $lh6;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__button {
+    text-transform: none;
+    align-self: center;
+    background-color: $gray;
+    color: $white;
+    border-radius: 100px;
+    width: 175px;
+    height: 45px;
+    margin-top: $m3;
+    font-size: $f5;
+    line-height: $lh5;
+    font-weight: $bold;
+    box-shadow: none;
+
+    &:hover {
+      box-shadow: none;
+      background-color: $gray;
+    }
+  }
+}
+
+.separator {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  margin-top: $m4;
+  margin-bottom: $m4;
+
+  hr:first-child {
+    margin-right: $m2;
+  }
+  hr:last-child {
+    margin-left: $m2;
+  }
+
+  &__line {
+    color: $gray;
+    background-color: $gray;
+    height: 1px;
+    width: 150px;
+
+    @include medium-mobile {
+      width: 100px;
+    }
+    @include small-mobile {
+      width: 50px;
+    }
+  }
+
+  &__text {
+    font-size: $f6;
+    line-height: $lh6;
+    color: $gray;
+  }
+}
+
+.new-account {
+  margin-top: $m4;
+
+  &__text {
+    font-size: $f6;
+    line-height: $lh5;
+    color: $gray;
+  }
+
+  &__link {
+    font-size: $f5;
+    line-height: $lh5;
+    color: $lightBlue;
+  }
+}
